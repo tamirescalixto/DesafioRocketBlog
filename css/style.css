@@ -187,6 +187,9 @@
 
 .firstPostGroup {
     max-width: 569px;
+}
+
+.firstPostGroup a {
     transition: 0.5s ease;
 }
 
