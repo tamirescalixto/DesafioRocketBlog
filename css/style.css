@@ -26,7 +26,7 @@
 .menuNav {
     display: flex;
     justify-content: space-around;
-    padding: 64.44px 0 0 0;
+    padding: 64.44px 30px 0 30px;
 }
 
 .navList {
@@ -45,6 +45,7 @@
     font-weight: 400;
     font-size: 18px;
     color: var(--white);
+    transition: 0.5s ease;
 }
 
 .itemList:hover {
@@ -59,6 +60,21 @@
     color: var(--white);
     border-left: 2px solid var(--green);
     padding: 0 0 0 3px;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background: var(--white);
+    transition: all 0.3 ease-in-out;
 }
 
 .searchBox {
@@ -97,6 +113,7 @@
     border: none;
     cursor: pointer;
     border-radius: 0px 4px 4px 0px;
+    transition: 0.5s ease;
 }
 
 .btnBg:hover {
@@ -152,6 +169,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    transition: 0.5s ease;
 }
 
 .textGroup a:hover {
@@ -169,6 +187,7 @@
 
 .firstPostGroup {
     max-width: 569px;
+    transition: 0.5s ease;
 }
 
 .firstPostGroup a:hover {
@@ -217,6 +236,7 @@
     font-size: 24px;
     color: var(--purple-bg);
     margin: 8px 0 8px 0;
+    transition: 0.5s ease;
 }
 
 .secondPostGroup a:hover,
@@ -268,6 +288,7 @@
     font-weight: 700;
     font-size: 24px;
     color: var(--purple-bg);
+    transition: 0.5s ease;
 }
 
 .postBox a:hover {
@@ -320,5 +341,42 @@
     .firstContentMain {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navList {
+        position: absolute;
+        left: -100%;
+        top: 110px;
+        gap: 24pxpx;
+        padding: 24px;
+        background: var(--button-bg);
+        text-align: center;
+        flex-direction: row;
+        width: 100%;
+        transition: 0.3s
+    }
+
+    .itemList {
+        margin: 16px 0;
+    }
+
+    .navList.active {
+        left: 0;
     }
 }
