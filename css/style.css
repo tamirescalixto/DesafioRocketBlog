@@ -362,7 +362,7 @@
     .navList {
         position: absolute;
         left: -100%;
-        top: 110px;
+        top: 104px;
         gap: 24pxpx;
         padding: 24px;
         background: var(--button-bg);
