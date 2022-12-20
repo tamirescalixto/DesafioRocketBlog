@@ -1,12 +1,13 @@
 ## Desafio Rocket Blog
 
 <p align="justify">
- O desafio consiste em desenvolver uma homepage responsiva para um blog baseado no modelo de layout do Figma, utilizando HTML e CSS.
+ O desafio consiste em desenvolver uma homepage responsiva para um blog baseado no modelo de layout do Figma.
 </p>
 
 ## Techs
 * HTML
 * CSS
+* JavaScript
 
 ## Pré-requisitos
 
